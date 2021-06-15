@@ -2,7 +2,7 @@
 
 
 ## HTML/CSS
-### A short brief on what you need to know about the block model.
+### A short brief on what you need to know about the "Box Model".
 
 1. All pages consist of HTML elements. The elements have are rectangles or boxes around them. The principles of behavior of these boxes, collected in the Box Model. Understanding it allows us to build more complex interfaces.
 
