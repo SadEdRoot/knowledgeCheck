@@ -29,6 +29,7 @@ There is a peculiarity in the behavior of external margins that can collapse ver
 ![Block props3](/img/Pic4.png)
 
 7. This is a quick overview of the block model. For a more detailed and deeper understanding. I would recommend these links:
-https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model
-https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements
-https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories
+ https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model  
+ https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements  
+ https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories  
+
