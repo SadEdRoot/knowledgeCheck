@@ -158,3 +158,30 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+Description:
+
+The project was made using create-react-app + sass to speed up the initial setup.
+React offers a component-based approach to building the interface, which satisfies the requirements the current project.
+
+The project is represented by a tree of nested components:  
+* App:
+  - Header:  
+    - H1: main header  
+    - Search: the search component.  
+  - MainLayout: Layout containing the "main" tag and styling the site's main grid  
+    - Content
+    - Sidebar
+
+Each of the components has modular SCSS files to guarantee the independence of the CSS properties.
+
+A naming of CSS properties was based on BEM methodology.
+
+When marking up large logical blocks, flow elements such as section, aside, main were applied. The use of these elements improves the semantics of the page.
+
+Viewpoints were applied to adapt the grid for different devices. In our case, the positioning of the content and sidebar changes from sequential display to display in 2 columns.
+
+Small components such as Search are independent of their parents and can be reused elsewhere.
+For the input field, a hidden label has been added for screen readers' users.
+
+The search button has styles for hover and active state to improve the user experience. In this case, the effect of scaling up and down was chosen as an example. These effects can be adjusted and varied at the design stage for compliance with the general design of the application.
