@@ -1,0 +1,13 @@
+.sidebar {
+  background: #929292;
+  min-height: 250px;
+  color: #ffffff;
+  padding: 20px;
+}
+@media (min-width: 660px) {
+  .sidebar {
+    min-height: 100vh;
+  }
+}
+
+/*# sourceMappingURL=Sidebar.module.css.map */

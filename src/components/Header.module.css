@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  background: #1d2631;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.header__text {
+  color: #ffffff;
+  margin: 0;
+}
+
+/*# sourceMappingURL=Header.module.css.map */
