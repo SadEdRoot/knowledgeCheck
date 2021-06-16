@@ -1,0 +1,25 @@
+@import "../variable";
+
+.search {
+  display: flex;
+  height: 32px;
+}
+
+.search__inputBox {
+  padding: 0 5px;
+  border: none;
+}
+
+.search__iconBox {
+  height: 32px;
+  width: 32px;
+  background: $bg-grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__icon {
+  height: 20px;
+  width: 20px;
+}

@@ -1,0 +1,13 @@
+.main {
+  min-height: 100vh;
+}
+@media (min-width: 660px) {
+  .main {
+    display: grid;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=MainLayout.module.css.map */

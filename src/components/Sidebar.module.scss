@@ -1,0 +1,12 @@
+@import "../variable";
+
+.sidebar {
+  background: $bg-grey;
+  min-height: 250px;
+  color: $color-white;
+  padding: 20px;
+
+  @media (min-width: $viewpoint--tablet) {
+    min-height: 100vh;
+  }
+}
