@@ -33,3 +33,110 @@ There is a peculiarity in the behavior of external margins that can collapse ver
  https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements  
  https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories  
 
+
+
+## JS exercise 
+We have array for exapmle:  
+```javascript
+const sales = [
+  { itemSold: “Football”, price: 19.99, dateSold: ‘2018-04-07’, id: ‘j_123’ }, 
+  { itemSold: “Trainers”, price: 159.95, dateSold: ‘2018-03-02’, id: ‘t_acds1’ }, 
+  { itemSold: “Cricket bat”, price: 204.97, dateSold: ‘2018-04-05’, id: ‘j_456’}, 
+  { itemSold: “Rugby ball”, price: 30.00, dateSold: ‘2017-04-22’, id: ‘t_acds3’ }, 
+  { itemSold: “Hockey stick”, price: 54.95, dateSold: ‘2017-03-19’, id: ‘j_999’ } 
+] 
+```
+
+How we can:
+### 1. Return the sum of the price of all properties as a single value.
+
+Answer: 
+```javascript
+sales.reduce((acc, it) => acc += it.price, 0).toFixed(2)
+```
+Return: 
+```javascript
+469.86
+```
+
+### 2. Return the items which were sold in 2017.
+
+Answer: 
+```javascript
+sales.filter((it) => it.dateSold.split('-')[0] === '2017')
+```
+Return: 
+```javascript
+[{
+  dateSold: "2017-04-22",
+  id: "t_acds3",
+  itemSold: "Rugby ball",
+  price: 30
+}, {
+  dateSold: "2017-03-19",
+  id: "j_999",
+  itemSold: "Hockey stick",
+  price: 54.95
+}]
+```
+
+### 3. Return an array of all of the itemsSold properties as strings, sorted alphabetically.
+
+Answer: 
+```javascript
+sales.sort((a, b) => {
+	if (a.itemSold < b.itemSold) {
+    return -1;
+  }
+  if (a.itemSold > b.itemSold) {
+    return 1;
+  }});
+```
+Return: 
+```javascript
+[{
+  dateSold: "2018-04-05",
+  id: "j_456",
+  itemSold: "Cricket bat",
+  price: 204.97
+}, {
+  dateSold: "2018-04-07",
+  id: "j_123",
+  itemSold: "Football",
+  price: 19.99
+}, {
+  dateSold: "2017-03-19",
+  id: "j_999",
+  itemSold: "Hockey stick",
+  price: 54.95
+}, {
+  dateSold: "2017-04-22",
+  id: "t_acds3",
+  itemSold: "Rugby ball",
+  price: 30
+}, {
+  dateSold: "2018-03-02",
+  id: "t_acds1",
+  itemSold: "Trainers",
+  price: 159.95
+}]
+```
+*NOTE: sort method don't return new array, but change old one.*
+
+### 4. Using id as an argument, return the sale which matches the id.
+
+Answer: 
+```javascript
+const findId = (id) => sales.find((el) => el.id === id);
+findId('t_acds3');
+```
+Return: 
+```javascript
+{
+  dateSold: "2017-04-22",
+  id: "t_acds3",
+  itemSold: "Rugby ball",
+  price: 30
+}
+```
+
